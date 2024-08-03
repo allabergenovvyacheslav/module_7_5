@@ -18,7 +18,7 @@ import datetime
 
 print('Текущая дериктория: ', os.getcwd())
 
-# доступ к названиям и путям всех папок и файлов в каталоге
+# доступ к названиям и путям всех папок и файлов в каталоге (относительный путь)
 for root, directories, files in os.walk('.'):
     for name in files:
         print(os.path.join(root, name))
