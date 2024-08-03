@@ -25,7 +25,7 @@ for root, directories, files in os.walk('.'):
 
 
 test_path = '.'
-# Нумерованный список (полный путь), содержащий имена файлов и директорий в каталоге
+# Нумерованный список (абсолютный путь), содержащий имена файлов и директорий в каталоге
 result = sorted(os.listdir(test_path))
 for i, j in enumerate(result):
     j = os.path.join(test_path, j)
